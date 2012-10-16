@@ -28,9 +28,12 @@ describe User do
   it { should respond_to(:remember_token) }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   it { should respond_to(:admin) }
 =======
 >>>>>>> updating-users
+=======
+>>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
 =======
 >>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
   it { should respond_to(:authenticate) }

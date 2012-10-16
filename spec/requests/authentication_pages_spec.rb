@@ -47,6 +47,7 @@ describe "Authentication" do
           end
         
 <<<<<<< HEAD
+<<<<<<< HEAD
         describe "authorization" do
 
             describe "for non-signed-in users" do
@@ -151,6 +152,10 @@ end
      end
 end
 >>>>>>> updating-users
+=======
+    end
+end
+>>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
 =======
     end
 end

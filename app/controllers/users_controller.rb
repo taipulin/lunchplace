@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+<<<<<<< HEAD
   before_filter :signed_in_user,
                 only: [:index, :edit, :update, :destroy]
   before_filter :correct_user,   only: [:edit, :update]
@@ -8,11 +9,15 @@ class UsersController < ApplicationController
     @users = User.paginate(page: params[:page])
   end
 
+=======
+
+>>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
   def show
     @user = User.find(params[:id])
   end
 
   def new
+<<<<<<< HEAD
     @user = User.new
   end
 
@@ -58,4 +63,19 @@ class UsersController < ApplicationController
     def admin_user
       redirect_to root_path unless current_user.admin?
     end
+=======
+     @user = User.new
+   end
+   
+   def create
+       @user = User.new(params[:user])
+       if @user.save
+         sign_in @user
+         flash[:success] = "Welcome to the Sample App!"
+         redirect_to @user
+       else
+         render 'new'
+       end
+     end
+>>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
 end
