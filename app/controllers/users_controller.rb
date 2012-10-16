@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   before_filter :signed_in_user,
                 only: [:index, :edit, :update, :destroy]
   before_filter :correct_user,   only: [:edit, :update]
@@ -10,6 +11,9 @@ class UsersController < ApplicationController
     @users = User.paginate(page: params[:page])
   end
 
+=======
+
+>>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
 =======
 
 >>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
@@ -82,6 +86,9 @@ class UsersController < ApplicationController
        end
      end
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
+=======
 >>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
 =======
 >>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
