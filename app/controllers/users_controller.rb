@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
 <<<<<<< HEAD
+<<<<<<< HEAD
 before_filter :signed_in_user, only: [:index,:edit, :update, :destroy]
 before_filter :correct_user,   only: [:edit, :update]
 before_filter :admin_user,     only: :destroy
@@ -7,11 +8,9 @@ before_filter :admin_user,     only: :destroy
 before_filter :signed_in_user, only: [:edit, :update]
 before_filter :correct_user,   only: [:edit, :update]
 >>>>>>> updating-users
+=======
+>>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
 
-  def index
-    @users = User.paginate(page: params[:page])
-    end
-    
   def show
     @user = User.find(params[:id])
   end
@@ -31,6 +30,7 @@ before_filter :correct_user,   only: [:edit, :update]
          render 'new'
        end
      end
+<<<<<<< HEAD
      
      def edit
        end
@@ -110,3 +110,6 @@ before_filter :correct_user,   only: [:edit, :update]
                end
 end
 >>>>>>> updating-users
+=======
+end
+>>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions

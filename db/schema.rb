@@ -12,10 +12,14 @@
 # It's strongly recommended to check this file into your version control system.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20121016033546) do
 =======
 ActiveRecord::Schema.define(:version => 20121007150046) do
 >>>>>>> updating-users
+=======
+ActiveRecord::Schema.define(:version => 20121012040033) do
+>>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
 
   create_table "users", :force => true do |t|
     t.string   "name"
@@ -25,7 +29,10 @@ ActiveRecord::Schema.define(:version => 20121007150046) do
     t.string   "password_digest"
     t.string   "remember_token"
 <<<<<<< HEAD
+<<<<<<< HEAD
     t.boolean  "admin",           :default => false
+=======
+>>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
   end
 
 =======

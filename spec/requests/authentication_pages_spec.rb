@@ -36,9 +36,7 @@ describe "Authentication" do
             end
 
             it { should have_selector('title', text: user.name) }
-            it { should have_link('Users',    href: users_path) }
             it { should have_link('Profile', href: user_path(user)) }
-            it { should have_link('Settings', href: edit_user_path(user)) }
             it { should have_link('Sign out', href: signout_path) }
             it { should_not have_link('Sign in', href: signin_path) }
           end
@@ -47,8 +45,8 @@ describe "Authentication" do
             before { click_link "Sign out" }
             it { should have_link('Sign in') }
           end
-        end
         
+<<<<<<< HEAD
         describe "authorization" do
 
             describe "for non-signed-in users" do
@@ -153,3 +151,7 @@ end
      end
 end
 >>>>>>> updating-users
+=======
+    end
+end
+>>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
