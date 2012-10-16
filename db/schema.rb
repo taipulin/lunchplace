@@ -14,10 +14,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20121016033546) do
 =======
 ActiveRecord::Schema.define(:version => 20121007150046) do
 >>>>>>> updating-users
+=======
+ActiveRecord::Schema.define(:version => 20121012040033) do
+>>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
 =======
 ActiveRecord::Schema.define(:version => 20121012040033) do
 >>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
@@ -35,7 +39,10 @@ ActiveRecord::Schema.define(:version => 20121012040033) do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     t.boolean  "admin",           :default => false
+=======
+>>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
 =======
 >>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
 =======

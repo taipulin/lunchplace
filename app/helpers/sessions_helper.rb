@@ -22,6 +22,7 @@ module SessionsHelper
       cookies.delete(:remember_token)
     end
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     
     def redirect_back_or(default)
@@ -59,6 +60,8 @@ module SessionsHelper
          session[:return_to] = request.url
        end
 
+=======
+>>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
 =======
 >>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
 end
