@@ -100,6 +100,7 @@ describe "User pages" do
     end
     
     describe "edit" do
+<<<<<<< HEAD
        let(:user) { FactoryGirl.create(:user) }
        before do
              sign_in user
@@ -119,6 +120,21 @@ describe "User pages" do
        end
        
        describe "with valid information" do
+=======
+        let(:user) { FactoryGirl.create(:user) }
+        before do
+              sign_in user
+              visit edit_user_path(user)
+            end
+            
+        describe "page" do
+          it { should have_selector('h1',    text: "Update your profile") }
+          it { should have_selector('title', text: "Edit user") }
+          it { should have_link('change', href: 'http://gravatar.com/emails') }
+        end
+
+        describe "with valid information" do
+>>>>>>> updating-users
              let(:new_name)  { "New Name" }
              let(:new_email) { "new@example.com" }
              before do
@@ -135,6 +151,10 @@ describe "User pages" do
              specify { user.reload.name.should  == new_name }
              specify { user.reload.email.should == new_email }
            end
+<<<<<<< HEAD
      end
+=======
+      end
+>>>>>>> updating-users
   end
 

@@ -26,7 +26,10 @@ describe User do
   it { should respond_to(:password) }
   it { should respond_to(:password_confirmation) }
   it { should respond_to(:remember_token) }
+<<<<<<< HEAD
   it { should respond_to(:admin) }
+=======
+>>>>>>> updating-users
   it { should respond_to(:authenticate) }
 
   it { should be_valid }
