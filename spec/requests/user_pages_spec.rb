@@ -57,6 +57,7 @@ describe "User pages" do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     
     describe "edit" do
 <<<<<<< HEAD
@@ -115,6 +116,8 @@ describe "User pages" do
 =======
       end
 >>>>>>> updating-users
+=======
+>>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
 =======
 >>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
 =======
