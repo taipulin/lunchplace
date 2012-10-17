@@ -54,12 +54,9 @@ describe "User pages" do
         end
       end
     end
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     
     describe "edit" do
-<<<<<<< HEAD
        let(:user) { FactoryGirl.create(:user) }
        before do
              sign_in user
@@ -79,7 +76,6 @@ describe "User pages" do
        end
        
        describe "with valid information" do
-=======
         let(:user) { FactoryGirl.create(:user) }
         before do
               sign_in user
@@ -93,7 +89,6 @@ describe "User pages" do
         end
 
         describe "with valid information" do
->>>>>>> updating-users
              let(:new_name)  { "New Name" }
              let(:new_email) { "new@example.com" }
              before do
@@ -110,16 +105,7 @@ describe "User pages" do
              specify { user.reload.name.should  == new_name }
              specify { user.reload.email.should == new_email }
            end
-<<<<<<< HEAD
+
      end
-=======
-      end
->>>>>>> updating-users
-=======
->>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
-=======
->>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
-=======
->>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
-  end
+
 

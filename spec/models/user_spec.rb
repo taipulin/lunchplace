@@ -26,22 +26,25 @@ describe User do
   it { should respond_to(:password) }
   it { should respond_to(:password_confirmation) }
   it { should respond_to(:remember_token) }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   it { should respond_to(:admin) }
-=======
->>>>>>> updating-users
-=======
->>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
-=======
->>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
-=======
->>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
   it { should respond_to(:authenticate) }
 
   it { should be_valid }
+  it { should_not be_admin }
+  
+  describe "accessible attributes" do
+    it "should not allow access to admin" do
+      expect do
+        User.new(admin: "1")
+      end.should raise_error(ActiveModel::MassAssignmentSecurity::Error)
+    end
+  end
+
+  describe "with admin attribute set to 'true'" do
+    before { @user.toggle!(:admin) }
+
+    it { should be_admin }
+  end
 
   describe "when name is not present" do
     before { @user.name = " " }
