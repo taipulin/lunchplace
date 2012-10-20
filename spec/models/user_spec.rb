@@ -31,8 +31,7 @@ describe User do
   
   it { should be_valid }
   it { should_not be_admin }
-<<<<<<< HEAD
-=======
+
   
   describe "accessible attributes" do
     it "should not allow access to admin" do
@@ -47,7 +46,7 @@ describe User do
 
     it { should be_admin }
   end
->>>>>>> c5cd2d1ceac1855f02e2af846be256ccaef4781f
+
 
   describe "with admin attribute set to 'true'" do
       before do
