@@ -11,7 +11,27 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20121019134202) do
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+ActiveRecord::Schema.define(:version => 20121016033546) do
+=======
+ActiveRecord::Schema.define(:version => 20121007150046) do
+>>>>>>> updating-users
+=======
+ActiveRecord::Schema.define(:version => 20121012040033) do
+>>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
+=======
+ActiveRecord::Schema.define(:version => 20121012040033) do
+>>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
+=======
+ActiveRecord::Schema.define(:version => 20121012040033) do
+>>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
+>>>>>>> c5cd2d1ceac1855f02e2af846be256ccaef4781f
 
   create_table "users", :force => true do |t|
     t.string   "name"
@@ -20,10 +40,31 @@ ActiveRecord::Schema.define(:version => 20121019134202) do
     t.datetime "updated_at"
     t.string   "password_digest"
     t.string   "remember_token"
+<<<<<<< HEAD
     t.boolean  "admin",           :default => false
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    t.boolean  "admin",           :default => false
+=======
+>>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
+=======
+>>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
+=======
+>>>>>>> parent of 7ba3f9c... Finish user edit, update, index, and destroy actions
+  end
+
+=======
+  end
+
+  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
+>>>>>>> updating-users
+>>>>>>> c5cd2d1ceac1855f02e2af846be256ccaef4781f
   add_index "users", ["remember_token"], :name => "index_users_on_remember_token"
 
 end
